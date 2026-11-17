@@ -74,8 +74,8 @@ export default function Addgame({ onClose }) {
           <input name="platform" value={game.platform} onChange={handleChange} placeholder="Ex. PC, PS5…" required />
         </label>
         <label>
-          Prix (€)
-          <input name="price" type="number" min="0" step="0.01" value={game.price} onChange={handleChange} placeholder="59.99" required />
+          Prix (TND)
+          <input name="price" type="number" min="0" step="0.001" value={game.price} onChange={handleChange} placeholder="199.990" required />
         </label>
         <label>
           Photo du jeu

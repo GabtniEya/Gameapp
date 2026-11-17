@@ -7,7 +7,7 @@ const initialState = {
       title: "The Witcher 3: Wild Hunt",
       genre: "RPG",
       platform: "PC",
-      price: 39.99,
+      price: 135.966,
       image:
         "https://images.unsplash.com/photo-1511512578047-dfb367046420?auto=format&fit=crop&w=900&q=85",
     },
@@ -16,7 +16,7 @@ const initialState = {
       title: "Elden Ring",
       genre: "Action RPG",
       platform: "PlayStation 5",
-      price: 59.99,
+      price: 203.966,
       image:
         "https://images.unsplash.com/photo-1542751371-adc38448a05e?auto=format&fit=crop&w=900&q=85",
     },
@@ -25,7 +25,7 @@ const initialState = {
       title: "Forza Horizon 5",
       genre: "Course",
       platform: "Xbox",
-      price: 49.99,
+      price: 169.966,
       image:
         "https://images.unsplash.com/photo-1503376780353-7e6692767b70?auto=format&fit=crop&w=900&q=85",
     },

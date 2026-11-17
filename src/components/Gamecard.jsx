@@ -23,7 +23,13 @@ export default function Gamecard({ game, onEdit }) {
       <div className="game-card-content">
         <div className="game-title-row">
           <h3>{game.title}</h3>
-          <span className="game-price">{Number(game.price).toFixed(2)} €</span>
+          <span className="game-price">
+            {new Intl.NumberFormat("fr-TN", {
+              minimumFractionDigits: 3,
+              maximumFractionDigits: 3,
+            }).format(Number(game.price))}{" "}
+            TND
+          </span>
         </div>
         <p className="game-platform"><span className="platform-icon" aria-hidden="true">▣</span>{game.platform}</p>
         <div className="card-actions">

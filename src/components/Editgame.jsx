@@ -39,8 +39,8 @@ export default function Editgame({ game, onClose }) {
       </div>
       <div className="form-row">
         <label>
-          Prix (€)
-          <input name="price" type="number" min="0" step="0.01" value={values.price} onChange={handleChange} required />
+          Prix (TND)
+          <input name="price" type="number" min="0" step="0.001" value={values.price} onChange={handleChange} required />
         </label>
         <label>
           Image (URL)
