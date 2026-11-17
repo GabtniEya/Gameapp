@@ -29,7 +29,7 @@ export default function App() {
             <p className="eyebrow"><span /> VOTRE ESPACE GAMING</p>
             <h1>Votre collection.<br /><span>Votre univers.</span></h1>
             <p className="hero-description">
-              GameApp is a modern and interactive gaming platform where users can discover, explore, and enjoy a collection of exciting games. The platform offers a user-friendly interface, engaging experiences, and a responsive design for desktop and mobile devices.
+              Retrouvez tous vos jeux préférés au même endroit. Gérez votre bibliothèque en toute simplicité.
             </p>
           </div>
           <div className="hero-art" aria-hidden="true">
@@ -58,28 +58,10 @@ export default function App() {
         <section className="info-section" aria-labelledby="about-title" id="about">
           <div>
             <p className="eyebrow section-eyebrow">À PROPOS</p>
-            <h2 id="about-title">Tout votre univers gaming, au même endroit</h2>
+            <h2 id="about-title">About GameApp</h2>
             <p>
-              Game Library réunit votre collection de jeux et un répertoire de contacts dans une seule application.
-              Gérez vos titres, retrouvez leurs informations et explorez les contacts chargés depuis une API.
+              GameApp is a modern and interactive gaming platform where users can discover, explore, and enjoy a collection of exciting games. The platform offers a user-friendly interface, engaging experiences, and a responsive design for desktop and mobile devices.
             </p>
-            <div className="about-highlights">
-              <article>
-                <span>01</span>
-                <h3>Votre collection</h3>
-                <p>Ajoutez vos jeux avec leur photo, genre, plateforme et prix en TND.</p>
-              </article>
-              <article>
-                <span>02</span>
-                <h3>Gestion simple</h3>
-                <p>Modifiez ou supprimez vos jeux et retrouvez-les avec la recherche.</p>
-              </article>
-              <article>
-                <span>03</span>
-                <h3>Répertoire connecté</h3>
-                <p>Consultez et filtrez les contacts récupérés depuis JSONPlaceholder.</p>
-              </article>
-            </div>
           </div>
         </section>
         <UserList />

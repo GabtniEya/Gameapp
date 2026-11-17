@@ -78,13 +78,6 @@ button { cursor: pointer; }
 .info-section { display: flex; justify-content: space-between; padding: 30px 0 48px; border-top: 1px solid rgba(255,255,255,.07); }
 .info-section h2 { margin: 0 0 10px; font: 600 24px "Space Grotesk", sans-serif; }
 .info-section > div > p:last-child { max-width: 580px; margin: 0; color: var(--muted); font-size: 13px; line-height: 1.7; }
-.about-section > div { width: 100%; }
-.about-section > div > p:not(.eyebrow) { max-width: 680px; }
-.about-highlights { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 15px; margin-top: 24px; }
-.about-highlights article { padding: 17px; border: 1px solid rgba(255,255,255,.075); border-radius: 12px; background: rgba(255,255,255,.025); }
-.about-highlights article > span { color: #b69bff; font: 600 11px "Space Grotesk", sans-serif; }
-.about-highlights h3 { margin: 10px 0 6px; color: #f2f0f8; font: 600 14px "Space Grotesk", sans-serif; }
-.about-highlights p { margin: 0; color: var(--muted); font-size: 11px; line-height: 1.6; }
 .contacts-section { padding: 39px 0 58px; border-top: 1px solid rgba(255,255,255,.07); }
 .contacts-description { margin: -7px 0 0; color: var(--muted); font-size: 12px; }
 .contacts-total { color: #aaaaba; font-size: 12px; }
@@ -185,7 +178,6 @@ button { cursor: pointer; }
   .hero-description { max-width: 360px; }
   .games-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
   .contacts-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
-  .about-highlights { grid-template-columns: 1fr; }
 }
 
 @media (max-width: 520px) {
