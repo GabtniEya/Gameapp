@@ -29,7 +29,7 @@ export default function App() {
             <p className="eyebrow"><span /> VOTRE ESPACE GAMING</p>
             <h1>Votre collection.<br /><span>Votre univers.</span></h1>
             <p className="hero-description">
-              Retrouvez tous vos jeux préférés au même endroit. Gérez votre bibliothèque en toute simplicité.
+              GameApp is a modern and interactive gaming platform where users can discover, explore, and enjoy a collection of exciting games. The platform offers a user-friendly interface, engaging experiences, and a responsive design for desktop and mobile devices.
             </p>
           </div>
           <div className="hero-art" aria-hidden="true">
