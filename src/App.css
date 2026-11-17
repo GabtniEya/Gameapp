@@ -77,7 +77,36 @@ button { cursor: pointer; }
 .collection-section { padding: 39px 0 64px; }
 .info-section { display: flex; justify-content: space-between; padding: 30px 0 48px; border-top: 1px solid rgba(255,255,255,.07); }
 .info-section h2 { margin: 0 0 10px; font: 600 24px "Space Grotesk", sans-serif; }
-.info-section p:last-child { max-width: 580px; margin: 0; color: var(--muted); font-size: 13px; line-height: 1.7; }
+.info-section > div > p:last-child { max-width: 580px; margin: 0; color: var(--muted); font-size: 13px; line-height: 1.7; }
+.about-section > div { width: 100%; }
+.about-section > div > p:not(.eyebrow) { max-width: 680px; }
+.about-highlights { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 15px; margin-top: 24px; }
+.about-highlights article { padding: 17px; border: 1px solid rgba(255,255,255,.075); border-radius: 12px; background: rgba(255,255,255,.025); }
+.about-highlights article > span { color: #b69bff; font: 600 11px "Space Grotesk", sans-serif; }
+.about-highlights h3 { margin: 10px 0 6px; color: #f2f0f8; font: 600 14px "Space Grotesk", sans-serif; }
+.about-highlights p { margin: 0; color: var(--muted); font-size: 11px; line-height: 1.6; }
+.contacts-section { padding: 39px 0 58px; border-top: 1px solid rgba(255,255,255,.07); }
+.contacts-description { margin: -7px 0 0; color: var(--muted); font-size: 12px; }
+.contacts-total { color: #aaaaba; font-size: 12px; }
+.contacts-search { display: flex; align-items: center; gap: 10px; width: min(390px, 100%); height: 42px; margin: 22px 0; padding: 0 12px; border: 1px solid rgba(255,255,255,.14); border-radius: 9px; background: rgba(255,255,255,.035); color: #a78bfa; }
+.contacts-search:focus-within { border-color: rgba(190,166,255,.6); box-shadow: 0 0 0 3px rgba(159,122,234,.1); }
+.contacts-search > span { font-size: 22px; line-height: 1; }
+.contacts-search input { width: 100%; padding: 0; border: 0; outline: 0; background: transparent; color: #f5f5fa; font-size: 12px; }
+.contacts-search input::placeholder { color: #898998; }
+.contacts-grid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 16px; }
+.contact-card { min-width: 0; padding: 18px; border: 1px solid rgba(255,255,255,.075); border-radius: 13px; background: linear-gradient(145deg, #1d1e29, #191a24); }
+.contact-card-heading { display: flex; align-items: flex-start; gap: 12px; }
+.contact-avatar { width: 37px; height: 37px; flex: 0 0 37px; display: grid; place-items: center; border-radius: 11px; background: linear-gradient(135deg, #8b5cf6, #c084fc); color: white; font: 600 16px "Space Grotesk", sans-serif; }
+.contact-card-heading h3 { margin: 0 0 4px; color: #f2f0f8; font: 600 14px/1.35 "Space Grotesk", sans-serif; }
+.contact-card-heading p { margin: 0; color: #b69bff; font-size: 11px; }
+.contact-details { display: grid; gap: 11px; margin: 17px 0 0; padding-top: 14px; border-top: 1px solid rgba(255,255,255,.07); }
+.contact-details div { min-width: 0; }
+.contact-details dt { margin-bottom: 4px; color: #828393; font-size: 10px; }
+.contact-details dd { overflow-wrap: anywhere; margin: 0; color: #c9c8d4; font-size: 11px; }
+.contact-details a { color: inherit; text-decoration: none; }
+.contact-details a:hover { color: #d3c4fa; }
+.contacts-message, .contacts-error { padding: 22px; border: 1px dashed rgba(255,255,255,.15); border-radius: 12px; color: var(--muted); font-size: 13px; }
+.contacts-error p { margin: 0 0 12px; color: #fca5a5; }
 .section-heading { display: flex; align-items: end; justify-content: space-between; margin-bottom: 22px; }
 .section-eyebrow { margin-bottom: 8px; color: #9e86e8; }
 .section-heading h2, .modal-heading h2 { display: flex; align-items: center; gap: 11px; margin: 0; font: 600 26px "Space Grotesk", sans-serif; letter-spacing: -.5px; }
@@ -155,6 +184,8 @@ button { cursor: pointer; }
   .hero-copy { max-width: 480px; }
   .hero-description { max-width: 360px; }
   .games-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .contacts-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .about-highlights { grid-template-columns: 1fr; }
 }
 
 @media (max-width: 520px) {
@@ -174,6 +205,9 @@ button { cursor: pointer; }
   .section-heading h2 { font-size: 22px; }
   .button-outline { padding: 9px 10px; font-size: 11px; }
   .games-grid { grid-template-columns: 1fr; gap: 14px; }
+  .contacts-grid { grid-template-columns: 1fr; }
+  .section-heading { gap: 12px; }
+  .contacts-total { text-align: right; font-size: 10px; }
   .game-image-wrap { height: 190px; }
   .modal { padding: 21px 17px; }
   .form-row { grid-template-columns: 1fr; gap: 15px; }
